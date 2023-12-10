@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="labtest.css" />
+  </head>
+
+  <body>
+    <div class="container" style="margin: 30px">
+      <form action="/submit" method="post">
+        <h2>Patient Details</h2>
+        <label for="fullname">Full Name:</label><br />
+        <input type="text" id="fullname" name="fullname" required /><br />
+        <label for="patientid">Patient Id:</label><br />
+        <input type="text" id="patientid" name="patientid" /><br />
+        <label for="contact">Contact Number:</label><br />
+        <input type="text" id="contact" name="contact" required /><br />
+        <label for="email">Email Id:</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
+        <h2>Address</h2>
+        <label for="houseno">House Number:</label><br />
+        <input type="text" id="houseno" name="houseno" required /><br />
+        <label for="street">Street:</label><br />
+        <input type="text" id="street" name="street" required /><br />
+        <label for="area">Area:</label><br />
+        <input type="text" id="area" name="area" required /><br />
+        <label for="district">District:</label><br />
+        <select id="district" name="district" required>
+          <option value="">Select...</option>
+          <option value="chosen">Chosen</option>
+          <!-- Add other options here --></select
+        ><br /><br />
+        <h2>Test Type</h2>
+        <label for="cbc">CBC</label><br />
+        <input type="checkbox" id="cbc" name="cbc" /><br />
+        <label for="urine">Complete Urine</label><br />
+        <input type="checkbox" id="urine" name="urine" /><br />
+        <label for="lipid">Lipid Profile</label><br />
+        <input type="checkbox" id="lipid" name="lipid" /><br />
+        <label for="tsh">Thyroid Stimulating Hormone (TSH)</label><br />
+        <input type="checkbox" id="tsh" name="tsh" /><br />
+        <label for="glucose">Glucose Test</label><br />
+        <input type="checkbox" id="glucose" name="glucose" /><br /><br />
+        <h2>Report Options</h2>
+        <label for="hardcopy">Hard Copy of Report:</label><br />
+        <input type="radio" id="hardcopy-yes" name="hardcopy" value="yes" />
+        <label for="hardcopy-yes">Yes</label><br />
+        <input type="radio" id="hardcopy-no" name="hardcopy" value="no" />
+        <label for="hardcopy-no">No</label><br /><br />
+        <h2>Date and Time</h2>
+        <label for="date">Date:</label><br />
+        <input type="date" id="date" name="date" required /><br />
+        <label for="time">Time:</label><br />
+        <input type="time" id="time" name="time" required /><br /><br />
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+      </form>
+      <img src="Lab-Test/lab-test.jpg" alt="Lab-Test" />
+    </div>
+  </body>
+</html>
